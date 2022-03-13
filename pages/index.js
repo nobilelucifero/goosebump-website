@@ -33,7 +33,10 @@ export default function Home() {
     <div className="bg-black">
       <Head>
         <title>Goosebump</title>
-        <meta name="description" content="The future of music mementos, directly from artists to fans." />
+        <meta
+          name="description"
+          content="The future of music mementos, directly from artists to fans."
+        />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
 
@@ -48,34 +51,38 @@ export default function Home() {
             </p>
 
             <div className="mt-12 form-wrapper">
-              {message
-                ? <p
-              className="px-4 py-3 bg-gray-700 text-white"
-              id="waitlist-form-status"
-            >{message}</p>
-                : <form
-                className="w-full flex gap-2"
-                id="waitlist-form"
-                onSubmit={subscribeEmail}
-              >
-                <input
-                  id="waitlist-form-email"
-                  className="border-2 transition-colors hover:border-gray-400 border-gray-500 focus:border-gray-50 focus:ring-0 bg-transparent w-full px-4 text-white placeholder-gray-500"
-                  placeholder="Enter your email"
-                  name="email"
-                  type="email"
-                  required
-                />
-                <button
-                  type="submit"
-                  className="bg-indigo-600 text-white px-4 py-3 font-bold sm:text-lg"
+              {message ? (
+                <p
+                  className="px-4 py-3 bg-gray-700 text-white"
+                  id="waitlist-form-status"
                 >
-                  Subscribe
-                </button>
-              </form>}
+                  {message}
+                </p>
+              ) : (
+                <form
+                  className="w-full flex gap-2"
+                  id="waitlist-form"
+                  onSubmit={subscribeEmail}
+                >
+                  <input
+                    id="waitlist-form-email"
+                    className="border-2 transition-colors hover:border-gray-400 border-gray-500 focus:border-gray-50 focus:ring-0 bg-transparent w-full px-4 text-white placeholder-gray-500"
+                    placeholder="Enter your email"
+                    name="email"
+                    type="email"
+                    required
+                  />
+                  <button
+                    type="submit"
+                    className="bg-indigo-600 text-white px-4 py-3 font-bold sm:text-lg"
+                  >
+                    Register
+                  </button>
+                </form>
+              )}
               <p className="mt-4 mb-0">Register to be the first to know.</p>
             </div>
-{/* 
+            {/* 
             <p
               className="px-4 py-3 bg-gray-700 text-white"
               id="waitlist-form-success"
