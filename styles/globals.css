@@ -3,3 +3,16 @@
 @tailwind utilities;
 
 /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, */
+
+.background-image-full {
+  background: #000 url("/gs-bg.jpg") center left no-repeat;
+  background-size: cover;
+  /* background: local; */
+}
+
+@media (min-resolution: 2dppx) {
+  .background-image-full {
+    background-image: url("/gs-bg@2x.jpg");
+    background-size: cover;
+  }
+}
