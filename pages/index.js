@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Home() {
@@ -40,8 +41,24 @@ export default function Home() {
         />
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
+      {/* <img
+        className="block absolute h-screen"
+        src="/gs-bg.jpg"
+        srcSet="/gs-bg.jpg, /gs-bg.jpg 2x"
+        alt=" "
+      /> */}
+      <Image
+        className="image"
+        src="/gs-bg.jpg"
+        alt=""
+        layout="fill"
+        objectFit="cover"
+        objectPosition="top left"
+        placeholder="blur"
+        blurDataURL="/gs-bg.jpg"
+      />
 
-      <main className="relative h-screen w-screen bg-center bg-cover background-image-full">
+      <main className="relative h-screen w-screen bg-center bg-cover background-image-full0 overflow-hidden">
         <div className="absolute inset-0 flex justify-center items-center">
           <div className="w-full max-w-xl0 text-white text-center px-5 items-center justify-center font-display">
             {/* <h1 className="text-center text-[3rem] font-display font-bold uppercase"> */}
