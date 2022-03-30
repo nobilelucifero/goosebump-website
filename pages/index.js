@@ -60,7 +60,7 @@ export default function Home() {
       />
       <Image
         className="mask"
-        src="/mask2.svg"
+        src="/mask.svg"
         alt=""
         layout="fill"
         objectFit="cover"
