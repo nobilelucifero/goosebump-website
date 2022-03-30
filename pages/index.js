@@ -49,13 +49,24 @@ export default function Home() {
       /> */}
       <Image
         className="image"
-        src="/gs-bg.jpg"
+        src="/gs-bg2@2x.jpg"
         alt=""
         layout="fill"
         objectFit="cover"
-        objectPosition="top left"
+        objectPosition="center left"
         placeholder="blur"
-        blurDataURL="/gs-bg.jpg"
+        blurDataURL="/gs-bg2@2x.jpg"
+      />
+      <Image
+        className="mask"
+        src="/mask2.svg"
+        alt=""
+        layout="fill"
+        objectFit="cover"
+        // width="auto"
+        // height="110vh"
+        objectPosition="center left"
+        backgroundSize="100%"
       />
 
       <main className="relative h-screen w-screen bg-center bg-cover background-image-full0 overflow-hidden">
@@ -64,21 +75,21 @@ export default function Home() {
             {/* <h1 className="text-center text-[3rem] font-display font-bold uppercase"> */}
             {/* Goosebump */}
             <img
-              className="mx-auto display-block w-auto h-5 md:h-8"
+              className="mx-auto display-block w-auto h-5 lg:h-8"
               src="/gs-logo.svg"
               alt="Goosebump"
             />
             {/* </h1> */}
-            <p className="mt-8 mb-4 text-5xl md:text-7xl font-medium uppercase scale-x-105 scale-y-95 tracking-tighter">
+            <p className="mt-6 mb-3 text-5xl lg:text-7xl font-medium uppercase scale-x-105 scale-y-95 tracking-tighter">
               Fandom unleashed
             </p>
-            <p className="mb-4 text-lg sm:text-xl">
+            <p className="mb-4 text-xl leading-6 sm:leading-8 lg:text-3xl sm:text-xl">
               {/* The future of music mementos, directly from artists to fans. The */}
               The digital (r)evolution{" "}
-              <span className="display-block md:hidden">
+              <span className="display-block lg:hidden">
                 <br />
               </span>
-              of music mementos.
+              of music mementos
             </p>
 
             {toggle ? (

@@ -21,3 +21,16 @@ body {
     background-size: cover;
   }
 }
+
+@media (max-width: 440px) {
+  .mask {
+    /* background-color: tomato; */
+    object-position: -13.25vw 50% !important;
+  }
+}
+@media (min-width: 769px) {
+  .mask {
+    /* background-color: tomato; */
+    /* object-fit: cover !important; */
+  }
+}
