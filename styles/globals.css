@@ -25,7 +25,7 @@ body {
 @media (max-width: 440px) {
   .mask {
     /* background-color: tomato; */
-    object-position: 3.7% 50% !important;
+    object-position: 1.6% 50% !important;
   }
 }
 @media (min-width: 769px) {
