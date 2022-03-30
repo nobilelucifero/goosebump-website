@@ -54,7 +54,8 @@ export default function Home() {
         layout="fill"
         objectFit="cover"
         objectPosition="center left"
-        placeholder="blur"
+        placeholder="empty"
+        loading="eager"
         blurDataURL="/gs-bg2@2x.jpg"
       />
       <Image
