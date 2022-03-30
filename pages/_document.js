@@ -34,7 +34,7 @@ export default function Document() {
           href="/images/favicon-16x16.png"
         />
       </Head>
-      <body>
+      <body className=" overflow-y-hidden">
         <Main />
         <NextScript />
       </body>

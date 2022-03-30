@@ -70,8 +70,8 @@ export default function Home() {
         backgroundSize="100%"
       />
 
-      <main className="relative h-screen w-screen bg-center bg-cover background-image-full0 overflow-hidden">
-        <div className="absolute inset-0 flex justify-center items-center">
+      <main className="relative overflow-y-hidden h-screen w-screen bg-center bg-cover background-image-full0 overflow-hidden">
+        <div className="absolute inset-0 flex justify-center items-center overflow-y-hidden">
           <div className="w-full max-w-xl0 text-white text-center px-5 items-center justify-center font-display">
             {/* <h1 className="text-center text-[3rem] font-display font-bold uppercase"> */}
             {/* Goosebump */}
