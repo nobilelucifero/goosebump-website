@@ -49,14 +49,14 @@ export default function Home() {
       /> */}
       <Image
         className="image"
-        src="/gs-bg2@2x.jpg"
+        src="/gradient@2x.jpg"
         alt=""
         layout="fill"
         objectFit="cover"
         objectPosition="center left"
         placeholder="empty"
         loading="eager"
-        blurDataURL="/gs-bg2@2x.jpg"
+        blurDataURL="/gradient@2x.jpg"
       />
       <Image
         className="mask"
